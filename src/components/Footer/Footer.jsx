@@ -1,5 +1,5 @@
 import React from "react";
-import {  FaTwitter, FaLinkedin, FaInstagram } from "react-icons/fa";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 const Footer = () => {
   // Smooth scroll function
@@ -38,11 +38,8 @@ const Footer = () => {
         {/* Social Media Icons - Responsive */}
         <div className="flex flex-wrap justify-center space-x-4 mt-6">
           {[
-            { icon: <FaTwitter />, link: "https://twitter.com/CodingMaster6?s=09" },
-            { icon: <FaLinkedin />, link: "https://www.linkedin.com/in/tarun-kaushik-553b441a4" },
-            { icon: <FaInstagram />, link: "https://www.instagram.com/coding_.master/" },
-            
-            
+            { icon: <FaGithub />, link: "https://github.com/chiraggarg879" },
+            { icon: <FaLinkedin />, link: "https://www.linkedin.com/in/chiraggarg879/" },
           ].map((item, index) => (
             <a
               key={index}
@@ -58,7 +55,7 @@ const Footer = () => {
 
         {/* Copyright Text */}
         <p className="text-sm text-gray-400 mt-6">
-          © 2025 Chirag Garg. All rights reserved.
+          © 2026 Chirag Garg. All rights reserved.
         </p>
       </div>
     </footer>

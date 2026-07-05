@@ -36,25 +36,25 @@ const About = () => {
           </h3>
           {/* About Me Paragraph */}
           <p className="text-base sm:text-lg md:text-lg text-gray-400 mb-10 mt-8 leading-relaxed">
-            My name is Chirag Garg, and I have recently completed my B.Tech in
-            Information Technology from NIT Kurukshetra. I am currently working
-            as a Graduate Engineer Trainee at Maruti Suzuki India Limited
-            (MSIL). I have a strong understanding of Data Structures and
-            Algorithms, as well as core Computer Science fundamentals such as
-            Object Oriented Programming, Computer Networking, Operating System,
-            Database Management System. I enjoy building modern, responsive web
-            applications using technologies like the MERN stack. I actively
-            solve DSA challenges and puzzles like Sudoku, and I hold good
-            ratings across multiple competitive coding platforms. Beyond
-            academics, I’m passionate about playing cricket and going to the
-            gym—activities that help me stay disciplined and maintain a balanced
-            lifestyle. I’m eager to apply my skills and enthusiasm to meaningful
-            software projects and contribute effectively in a professional
-            environment.
+            I am Chirag Garg, a Backend Developer and Software Engineer currently
+            working as a Graduate Engineer Trainee at Shiprocket Limited in
+            Gurugram. I build scalable microservices, optimize backend workflows,
+            and automate production processes using technologies like Go,
+            Python, Node.js, and distributed architecture patterns. I completed my
+            B.Tech in Information Technology from NIT Kurukshetra, where I
+            strengthened my foundation in Data Structures & Algorithms,
+            OOP, DBMS, Operating Systems, and Computer Networks.
+            <br />
+            <br />
+            I enjoy solving competitive programming problems, and I have solved
+            1000+ DSA challenges across LeetCode, CodeChef, and GFG. Outside of
+            work, I stay disciplined through cricket and gym workouts while
+            continuously learning new tools for cloud, automation, and software
+            reliability.
           </p>
           {/* Resume Button */}
           <a
-            href="https://drive.google.com/file/d/152_6UPPp7CRVhOZPKWEx7H-33LFy_1x4/view?usp=sharing"
+            href="https://drive.google.com/file/d/1NKMZr4x98nxpN2OSEqr2SR-h2ABeEGJA/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block text-white py-3 px-8 rounded-full mt-5 text-lg font-bold transition duration-300 transform hover:scale-105"

@@ -43,14 +43,26 @@ const Skills = () => (
               {category.skills.map((skill) => (
                 <div
                   key={skill.name}
-                  className="flex items-center justify-center space-x-2 bg-transparent border-2 border-gray-700 rounded-3xl py-2 px-2 sm:py-2 sm:px-2 text-center"
+                  className="flex items-center space-x-3 bg-transparent border-2 border-gray-700 rounded-3xl py-2 px-3 sm:py-2 sm:px-3 text-left"
                 >
-                  <img
-                    src={skill.logo}
-                    alt={`${skill.name} logo`}
-                    className="w-6 h-6 sm:w-8 sm:h-8"
-                  />
-                  <span className="text-xs sm:text-sm text-gray-300">
+                  <div className="w-6 h-6 sm:w-8 sm:h-8 flex-shrink-0 overflow-hidden rounded-full bg-[#151321] flex items-center justify-center">
+                    {skill.logo ? (
+                      <img
+                        src={skill.logo}
+                        alt={`${skill.name} logo`}
+                        className="w-full h-full object-contain"
+                      />
+                    ) : (
+                      <span className="text-[10px] sm:text-xs text-gray-300">
+                        {skill.name
+                          .split(" ")
+                          .map((w) => w[0])
+                          .slice(0, 2)
+                          .join("")}
+                      </span>
+                    )}
+                  </div>
+                  <span className="text-xs sm:text-sm text-gray-300 truncate">
                     {skill.name}
                   </span>
                 </div>
