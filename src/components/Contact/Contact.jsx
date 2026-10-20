@@ -2,6 +2,8 @@ import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { FaEnvelope, FaLinkedin, FaGithub } from "react-icons/fa";
+import { CONTACT_EMAIL } from "../../constants";
 
 const Contact = () => {
   const form = useRef();
@@ -49,7 +51,7 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="flex flex-col items-center justify-center py-24 px-[12vw] md:px-[7vw] lg:px-[20vw]"
+      className="flex flex-col items-center justify-center py-24 px-[7vw] md:px-[7vw] lg:px-[20vw]"
     >
       {/* Toast Container */}
       <ToastContainer />
@@ -59,14 +61,33 @@ const Contact = () => {
         <h2 className="text-4xl font-bold text-white">CONTACT</h2>
         <div className="w-32 h-1 bg-purple-500 mx-auto mt-4"></div>
         <p className="text-gray-400 mt-4 text-lg font-semibold">
-          I’d love to hear from you—reach out for any opportunities or questions!
+          Hiring for a backend / Golang role? I&apos;d love to chat.
         </p>
+      </div>
+
+      {/* Direct links */}
+      <div className="flex flex-wrap justify-center gap-4">
+        {[
+          { icon: <FaEnvelope />, label: CONTACT_EMAIL, link: `mailto:${CONTACT_EMAIL}` },
+          { icon: <FaLinkedin />, label: "LinkedIn", link: "https://www.linkedin.com/in/chiraggarg879/" },
+          { icon: <FaGithub />, label: "GitHub", link: "https://github.com/chiraggarg879" },
+        ].map((item) => (
+          <a
+            key={item.label}
+            href={item.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 rounded-full border border-gray-700 bg-[#0d081f] px-5 py-2 text-gray-300 hover:border-[#8245ec] hover:text-white transition"
+          >
+            {item.icon} {item.label}
+          </a>
+        ))}
       </div>
 
       {/* Contact Form */}
       <div className="mt-8 w-full max-w-md bg-[#0d081f] p-6 rounded-lg shadow-lg border border-gray-700">
         <h3 className="text-xl font-semibold text-white text-center">
-          Connect With Me <span className="ml-1">🚀</span>
+          Or send a message
         </h3>
 
         <form ref={form} onSubmit={sendEmail} className="mt-4 flex flex-col space-y-4">

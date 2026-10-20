@@ -20,9 +20,9 @@ const App = () => {
       <div className="relative pt-20">
         <Navbar />
         <About />
-        <Skills />
         <Experience />
         <Work />
+        <Skills />
         <Education />
         <Contact />
         <Footer />

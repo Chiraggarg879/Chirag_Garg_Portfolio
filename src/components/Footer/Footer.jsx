@@ -1,5 +1,7 @@
 import React from "react";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
+import { SiLeetcode } from "react-icons/si";
+import { CONTACT_EMAIL } from "../../constants";
 
 const Footer = () => {
   // Smooth scroll function
@@ -20,10 +22,11 @@ const Footer = () => {
         <nav className="flex flex-wrap justify-center space-x-4 sm:space-x-6 mt-4">
           {[
             { name: "About", id: "about" },
-            { name: "Skills", id: "skills" },
             { name: "Experience", id: "experience" },
-            { name: "Projects", id: "projects" },
+            { name: "Projects", id: "work" },
+            { name: "Skills", id: "skills" },
             { name: "Education", id: "education" },
+            { name: "Contact", id: "contact" },
           ].map((item, index) => (
             <button
               key={index}
@@ -40,6 +43,8 @@ const Footer = () => {
           {[
             { icon: <FaGithub />, link: "https://github.com/chiraggarg879" },
             { icon: <FaLinkedin />, link: "https://www.linkedin.com/in/chiraggarg879/" },
+            { icon: <SiLeetcode />, link: "https://leetcode.com/u/ChiragGarg879/" },
+            { icon: <FaEnvelope />, link: `mailto:${CONTACT_EMAIL}` },
           ].map((item, index) => (
             <a
               key={index}
@@ -55,7 +60,7 @@ const Footer = () => {
 
         {/* Copyright Text */}
         <p className="text-sm text-gray-400 mt-6">
-          © 2026 Chirag Garg. All rights reserved.
+          © {new Date().getFullYear()} Chirag Garg · Built with React & Tailwind CSS
         </p>
       </div>
     </footer>

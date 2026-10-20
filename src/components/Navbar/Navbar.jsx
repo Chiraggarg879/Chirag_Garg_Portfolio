@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { FiMenu, FiX } from "react-icons/fi";
 import { FaGithub, FaLinkedin,FaUtensils } from "react-icons/fa";
 import { SiLeetcode, SiCodeforces, SiGeeksforgeeks } from "react-icons/si";
+import { RESUME_URL } from "../../constants";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -31,10 +32,11 @@ const Navbar = () => {
 
   const menuItems = [
     { id: "about", label: "About" },
-    { id: "skills", label: "Skills" },
     { id: "experience", label: "Experience" },
     { id: "work", label: "Projects" },
+    { id: "skills", label: "Skills" },
     { id: "education", label: "Education" },
+    { id: "contact", label: "Contact" },
   ];
 
   return (
@@ -45,7 +47,10 @@ const Navbar = () => {
     >
       <div className="text-white py-5 flex justify-between items-center">
         {/* Logo */}
-        <div className="text-lg font-semibold cursor-pointer">
+        <div
+          className="text-lg font-semibold cursor-pointer"
+          onClick={() => handleMenuItemClick("about")}
+        >
           <span className="text-[#8245ec]">&lt;</span>
           <span className="text-white">Chirag</span>
           <span className="text-[#8245ec]">/</span>
@@ -130,6 +135,16 @@ const Navbar = () => {
   >
     <SiGeeksforgeeks size={24} />
   </a>
+
+  {/* Resume */}
+  <a
+    href={RESUME_URL}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="ml-2 rounded-full border border-[#8245ec] px-4 py-0.5 text-sm font-semibold text-white hover:bg-[#8245ec]"
+  >
+    Resume
+  </a>
 </div>
 
         {/* Mobile Menu Icon */}
@@ -180,6 +195,14 @@ const Navbar = () => {
                 className="text-gray-300 hover:text-white"
               >
                 <FaLinkedin size={24} />
+              </a>
+              <a
+                href={RESUME_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="rounded-full border border-[#8245ec] px-4 py-0.5 text-sm font-semibold text-white"
+              >
+                Resume
               </a>
             </div>
           </ul>

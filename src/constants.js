@@ -1,50 +1,29 @@
+import {
+  SiApachekafka,
+  SiKubernetes,
+  SiJenkins,
+  SiLinux,
+  SiJsonwebtokens,
+} from "react-icons/si";
+
 // Skills Section Logo's
-import htmlLogo from "./assets/tech_logo/html.png";
-import cssLogo from "./assets/tech_logo/css.png";
-import sassLogo from "./assets/tech_logo/sass.png";
 import javascriptLogo from "./assets/tech_logo/javascript.png";
-import reactjsLogo from "./assets/tech_logo/reactjs.png";
-import angularLogo from "./assets/tech_logo/angular.png";
-import reduxLogo from "./assets/tech_logo/redux.png";
-import nextjsLogo from "./assets/tech_logo/nextjs.png";
-import tailwindcssLogo from "./assets/tech_logo/tailwindcss.png";
-import gsapLogo from "./assets/tech_logo/gsap.png";
-import materialuiLogo from "./assets/tech_logo/materialui.png";
-import bootstrapLogo from "./assets/tech_logo/bootstrap.png";
-import springbootLogo from "./assets/tech_logo/springboot.png";
-import nodejsLogo from "./assets/tech_logo/nodejs.png";
-import expressjsLogo from "./assets/tech_logo/express.png";
 import mysqlLogo from "./assets/tech_logo/mysql.png";
 import mongodbLogo from "./assets/tech_logo/mongodb.png";
-import firebaseLogo from "./assets/tech_logo/firebase.png";
-import cLogo from "./assets/tech_logo/c.png";
 import cppLogo from "./assets/tech_logo/cpp.png";
-import javaLogo from "./assets/tech_logo/java.png";
 import pythonLogo from "./assets/tech_logo/python.png";
 import typescriptLogo from "./assets/tech_logo/typescript.png";
 import gitLogo from "./assets/tech_logo/git.png";
-import githubLogo from "./assets/tech_logo/github.png";
-import vscodeLogo from "./assets/tech_logo/vscode.png";
-import postmanLogo from "./assets/tech_logo/postman.png";
-import mcLogo from "./assets/tech_logo/mc.png";
-import figmaLogo from "./assets/tech_logo/figma.png";
-import netlifyLogo from "./assets/tech_logo/netlify.png";
-import vercelLogo from "./assets/tech_logo/vercel.png";
-import postgreLogo from "./assets/tech_logo/postgre.png";
-import csharpLogo from "./assets/tech_logo/csharp.png";
-// Tech logo imports added by user
 import golangLogo from "./assets/tech_logo/go_logo.png";
 import redisLogo from "./assets/tech_logo/redis-logo.png";
 import dockerLogo from "./assets/tech_logo/docker-logo.png";
 import awsLogo from "./assets/tech_logo/AWS-Logo.png";
 import grpcLogo from "./assets/tech_logo/Grpc-Logo.png";
-import jwtLogo from "./assets/tech_logo/jwt_logo.png";
 import microservicesLogo from "./assets/tech_logo/microservice-logo.png";
 import restapiLogo from "./assets/tech_logo/rest_api_logo.png";
 
 // Experience Section Logo's
 import shiprocketlogo from "./assets/company_logo/shiprocketlogo.png";
-import marutilogo from "./assets/company_logo/marutilogo.jpg";
 import nitkkrlogo from "./assets/company_logo/nitkkrlogo.jpg";
 
 // Education Section Logo's
@@ -55,70 +34,90 @@ import dayaramlogo from "./assets/education_logo/dayaramlogo.jpg";
 // Project Section Logo's
 import expenseimg from "./assets/work_logo/expense.png";
 import codecollabimg from "./assets/work_logo/CodeCollabImg.png";
-import bstheapvisualizerimg from "./assets/work_logo/BST_img.png";
 import grootImg from "./assets/work_logo/groot.png";
+
+export const RESUME_URL =
+  "https://drive.google.com/file/d/1NKMZr4x98nxpN2OSEqr2SR-h2ABeEGJA/view?usp=sharing";
+
+export const CONTACT_EMAIL = "chiraggarg879@gmail.com";
+
+// Headline numbers shown in the hero section.
+// Text wrapped in **double asterisks** anywhere below is rendered highlighted.
+export const impactStats = [
+  { value: "225K+", label: "orders/day on a Go + Kafka service I migrated" },
+  { value: "43%", label: "p90 latency cut (14s → 8s)" },
+  { value: "140K+", label: "partner API calls/day, exactly-once" },
+  { value: "0.06%", label: "of batches ever needed recovery" },
+];
 
 export const SkillsInfo = [
   {
-    title: "Frontend",
+    title: "Languages",
     skills: [
-      { name: "HTML", logo: htmlLogo },
-      { name: "CSS", logo: cssLogo },
-      // { name: 'SASS', logo: sassLogo },
+      { name: "Go (Golang)", logo: golangLogo },
+      { name: "C++", logo: cppLogo },
+      { name: "Python", logo: pythonLogo },
       { name: "JavaScript", logo: javascriptLogo },
-      { name: "React JS", logo: reactjsLogo },
-      // { name: 'Angular', logo: angularLogo },
-      { name: "Redux", logo: reduxLogo },
-      // { name: 'Next JS', logo: nextjsLogo },
-      { name: "Tailwind CSS", logo: tailwindcssLogo },
-      // { name: 'GSAP', logo: gsapLogo },
-      { name: "Material UI", logo: materialuiLogo },
-      { name: "Bootstrap", logo: bootstrapLogo },
+      { name: "TypeScript", logo: typescriptLogo },
+      { name: "SQL" },
     ],
   },
   {
     title: "Backend",
     skills: [
-      // { name: 'Springboot', logo: springbootLogo },
-      { name: "Node JS", logo: nodejsLogo },
-      { name: "Express JS", logo: expressjsLogo },
-      { name: "MySQL", logo: mysqlLogo },
-      { name: "MongoDB", logo: mongodbLogo },
-      { name: "Golang", logo: golangLogo },
+      { name: "Microservices", logo: microservicesLogo },
+      { name: "Apache Kafka", icon: SiApachekafka },
+      { name: "Event-Driven Architecture" },
       { name: "REST APIs", logo: restapiLogo },
       { name: "gRPC", logo: grpcLogo },
-      { name: "Microservices", logo: microservicesLogo },
+      { name: "Distributed Locking" },
+      { name: "Caching" },
+      { name: "Idempotency" },
+      { name: "Fault Tolerance" },
+      { name: "JWT", icon: SiJsonwebtokens },
+    ],
+  },
+  {
+    title: "Concurrency & Quality",
+    skills: [
+      { name: "Goroutines" },
+      { name: "Channels" },
+      { name: "Worker Pools" },
+      { name: "Mutexes & Atomics" },
+      { name: "Unit / Integration Testing" },
+      { name: "Load Testing" },
+    ],
+  },
+  {
+    title: "Databases",
+    skills: [
+      { name: "MySQL", logo: mysqlLogo },
       { name: "Redis", logo: redisLogo },
-      { name: "JWT Authentication", logo: jwtLogo },
+      { name: "MongoDB", logo: mongodbLogo },
+    ],
+  },
+  {
+    title: "Cloud & DevOps",
+    skills: [
+      { name: "AWS (EC2, S3, IAM)", logo: awsLogo },
+      { name: "Kubernetes (EKS)", icon: SiKubernetes },
       { name: "Docker", logo: dockerLogo },
-      { name: "AWS", logo: awsLogo },
-      // { name: 'Firebase', logo: firebaseLogo },
-      // { name: 'PostgreSQL', logo: postgreLogo },
-    ],
-  },
-  {
-    title: "Languages",
-    skills: [
-      { name: "C", logo: cLogo },
-      { name: "C++", logo: cppLogo },
-      { name: "Java", logo: javaLogo },
-      { name: "Python", logo: pythonLogo },
-      // { name: 'C-Sharp', logo: csharpLogo },
-      { name: "JavaScript", logo: javascriptLogo },
-      { name: "TypeScript", logo: typescriptLogo },
-    ],
-  },
-  {
-    title: "Tools",
-    skills: [
+      { name: "Jenkins", icon: SiJenkins },
+      { name: "CI/CD" },
+      { name: "Observability" },
+      { name: "Linux", icon: SiLinux },
       { name: "Git", logo: gitLogo },
-      { name: "GitHub", logo: githubLogo },
-      { name: "VS Code", logo: vscodeLogo },
-      { name: "Postman", logo: postmanLogo },
-      { name: "Compass", logo: mcLogo },
-      { name: "Vercel", logo: vercelLogo },
-      { name: "Netlify", logo: netlifyLogo },
-      // { name: 'Figma', logo: figmaLogo },
+    ],
+  },
+  {
+    title: "CS Fundamentals",
+    skills: [
+      { name: "Data Structures & Algorithms" },
+      { name: "System Design" },
+      { name: "OOP" },
+      { name: "DBMS" },
+      { name: "Operating Systems" },
+      { name: "Computer Networks" },
     ],
   },
 ];
@@ -127,49 +126,39 @@ export const experiences = [
   {
     id: 0,
     img: shiprocketlogo,
-    role: "Graduate Engineer Trainee (Software Engineer)",
+    role: "Software Engineer (Backend, Golang)",
     company: "Shiprocket Limited",
+    location: "Gurugram, Haryana",
     date: "Nov 2025 - Present",
-    desc: "Refactored legacy courier integration workflows into scalable Golang microservices, implemented Redis caching for high-frequency backend paths, and automated scheduled courier processing workflows in a distributed environment.",
+    bullets: [
+      "Spearheaded migration of a legacy PHP bulk-assignment service to an **event-driven Golang microservice on Apache Kafka**, handling **~225K orders/day** for **150+ enterprise sellers**; cut **p90 latency by 43% (14s → 8s)** and **halved per-order turnaround** via a zero-downtime, feature-flagged rollout.",
+      "Architected a **bulk pickup-scheduling pipeline** sustaining **~140K calls daily (~99% of traffic)** with concurrent worker pools, per-seller quotas, and **idempotent, exactly-once** requests to partner services.",
+      "Hardened fault tolerance so only **0.06% of batches** needed recovery, leveraging at-least-once delivery, atomic **Redis Lua scripts**, safe **Kafka offset commits**, and graceful degradation during broker outages.",
+      "Re-engineered the **order & shipment cancellation engine in Go**, taking over a PHP flow serving **100K+ requests/day**; orchestrated **8+ downstream side effects** asynchronously with **100% DB-write parity** and auto-fallback for a risk-free cutover.",
+      "Delivered holiday-aware pickup and delivery-date logic across **3 services** and integrated couriers (Blue Dart, Pikndel, Delhivery), backed by unit/integration tests, **distributed tracing**, and **structured logging**.",
+    ],
     skills: [
       "Golang",
-      "Microservices",
+      "Apache Kafka",
       "Redis",
-      "Kafka",
+      "MySQL",
+      "Microservices",
+      "Kubernetes (EKS)",
       "AWS",
-      "Production Debugging",
+      "Distributed Tracing",
     ],
   },
   {
     id: 1,
-    img: marutilogo,
-    role: "Graduate Engineer Trainee",
-    company: "Maruti Suzuki India Limited",
-    date: "June 2025 - Nov 2025",
-    desc: "Built Python automation scripts using NumPy and Pandas to process LPDC and HPDC machine sensor data, while executing PL/SQL queries to migrate and validate production data for reliable QA testing.",
-    skills: [
-      "Python",
-      "NumPy",
-      "Pandas",
-      "PL/SQL",
-      "Data Automation",
-      "QA Support",
-    ],
-  },
-  {
-    id: 2,
     img: nitkkrlogo,
     role: "Project Intern",
     company: "Dept. of Computer Engineering, NIT Kurukshetra",
-    date: "Feb 2024 - June 2024",
-    desc: "Designed a CodeBERT-based framework to evaluate 15+ ML classifiers for vulnerability prediction and achieved 97% accuracy in identifying vulnerable code functions.",
-    skills: [
-      "Python",
-      "Machine Learning",
-      "CodeBERT",
-      "Vulnerability Prediction",
-      "Research",
+    location: "Kurukshetra, Haryana",
+    date: "Feb 2024 - Jun 2024",
+    bullets: [
+      "Benchmarked **15+ ML classifiers** on **CodeBERT** embeddings for source-code vulnerability prediction, creating an evaluation framework that reached **97% accuracy** in flagging vulnerable functions.",
     ],
+    skills: ["Python", "Machine Learning", "CodeBERT", "Research"],
   },
 ];
 
@@ -177,81 +166,109 @@ export const education = [
   {
     id: 0,
     img: nitkkredulogo,
-    school: "NIT,Kurukshetra",
+    school: "National Institute of Technology, Kurukshetra",
     date: "Dec 2021 - May 2025",
-    grade: "8.59 CGPA",
-    desc: "I have completed my Bachelor's degree (B.Tech) in Information Technology from NIT Kurukshetra. During my time at NIT, I built a solid foundation in core computer science subjects and engineering principles. I studied courses such as Data Structures and Algorithms, Operating Systems, Computer Networks, Database Management Systems, Object-Oriented Programming, and Software Development. I worked on several academic projects and participated in coding competitions, which strengthened my problem-solving and programming skills. My journey at NIT Kurukshetra played a crucial role in shaping my technical expertise and preparing me for professional challenges.",
-    degree: "Bachelor of Technology - B.Tech in Information Technology",
+    grade: "8.59 / 10 CGPA",
+    desc: "Core coursework in Data Structures & Algorithms, Operating Systems, Computer Networks, DBMS, Object-Oriented Programming and System Design. Active competitive programmer throughout.",
+    degree: "B.Tech in Information Technology",
   },
   {
     id: 1,
     img: oxfordlogo,
     school: "Oxford Public School, Uklana Mandi",
-    date: "April 2020 - March 2021",
-    grade: "95.2",
-    desc: "I completed my class 12 education from Oxford Public School, Uklana Mandi, under the CBSE board, where I studied Physics, Chemistry, and Mathematics (PCM) with Computer Science.",
-    degree: "CBSE(XII) - PCM with Computer Science",
+    date: "Apr 2020 - Mar 2021",
+    grade: "95.2%",
+    desc: "Physics, Chemistry and Mathematics with Computer Science.",
+    degree: "CBSE (XII) - PCM with Computer Science",
   },
   {
     id: 2,
     img: dayaramlogo,
     school: "Dayaram Public School, Fatehabad",
-    date: "Apr 2018 - March 2021",
+    date: "Apr 2018 - Mar 2019",
     grade: "93.2%",
-    desc: "I completed my class 10 education from Dayaram Public School, under the CBSE board, where I studied Science with Information Techology.",
-    degree: "CBSE(X) -Science with Information Technology",
+    desc: "Science with Information Technology.",
+    degree: "CBSE (X) - Science with Information Technology",
+  },
+];
+
+export const achievements = [
+  {
+    title: "LeetCode",
+    value: "1751",
+    desc: "Max contest rating, **top 10%** globally",
+    link: "https://leetcode.com/u/ChiragGarg879/",
+  },
+  {
+    title: "CodeChef",
+    value: "3★",
+    desc: "**3-star** rated competitive programmer",
+    link: "https://www.codechef.com/users/cgking",
+  },
+  {
+    title: "Problem Solving",
+    value: "1000+",
+    desc: "DSA problems solved across LeetCode, CodeChef & GFG",
+    link: "https://www.geeksforgeeks.org/user/chiraggn5vp/",
   },
 ];
 
 export const projects = [
   {
     id: 0,
-    title: "Custom Version Control System - Groot",
+    featured: true,
+    title: "Concurrent Cinema Ticket Booking System",
+    date: "Oct 2026",
     description:
-      "Implemented a Git-like version control system from scratch with core features such as init, add, commit, log, diff, and efficient file tracking.",
-    image: grootImg,
-    tags: [
-      "JavaScript",
-      "Node.js",
-      "Version Control",
-      "Data Structures",
-      "Algorithms",
+      "High-concurrency seat-reservation backend that guarantees no seat is ever sold twice.",
+    highlights: [
+      "Eliminated overselling with **atomic SET NX distributed locks**, validated by **100K concurrent goroutines** racing for one seat with **zero conflicts**.",
+      "Two-phase **hold → confirm** flow where **2-minute expiring holds** free abandoned carts, with **O(1)** reverse-index lookup.",
+      "**3 pluggable storage backends** behind a single Go interface, exposed via 4 REST endpoints.",
     ],
+    tags: ["Go", "Redis", "Docker", "REST APIs", "Concurrency"],
     github: "https://github.com/Chiraggarg879",
-    webapp: "#",
   },
   {
     id: 1,
-    title: "Code Collab Application",
+    featured: true,
+    title: "Scalable URL Shortener Service",
+    date: "Aug 2026",
     description:
-      "Built a real-time collaborative editor supporting multiple users and live synchronization across languages using TypeScript, React.js, and WebSocket communication.",
-    image: codecollabimg,
-    tags: [
-      "TypeScript",
-      "React.js",
-      "Web Sockets",
-      "Realtime",
-      "Collaboration",
+      "Stateless link-shortening service with redirects, analytics and Redis-backed rate limiting.",
+    highlights: [
+      "**301 redirects**, custom aliases, collision-checked **6-char codes (16.7M keyspace)**, configurable expiry and click analytics.",
+      "Per-IP **rate limiting** with Redis counters over **30-minute windows**, exposing remaining quota and reset time.",
+      "Containerized with **multi-stage, non-root images** and Docker Compose.",
     ],
+    tags: ["Go", "Fiber", "MySQL", "Redis", "Docker"],
     github: "https://github.com/Chiraggarg879",
-    webapp: "#",
   },
   {
     id: 2,
+    title: "Groot - Custom Version Control System",
+    description:
+      "A Git-like version control system built from scratch with init, add, commit, log, diff and efficient file tracking.",
+    image: grootImg,
+    tags: ["JavaScript", "Node.js", "Data Structures"],
+    github: "https://github.com/Chiraggarg879",
+  },
+  {
+    id: 3,
+    title: "Code Collab",
+    description:
+      "Real-time collaborative code editor with multi-user live synchronization over WebSockets.",
+    image: codecollabimg,
+    tags: ["TypeScript", "React.js", "WebSockets"],
+    github: "https://github.com/Chiraggarg879",
+  },
+  {
+    id: 4,
     title: "Expense Management App",
     description:
-      "Developed a secure full-stack expense tracker with JWT authentication, CRUD APIs, and persistent storage for transaction management.",
+      "Full-stack expense tracker with JWT authentication, CRUD APIs and persistent storage.",
     image: expenseimg,
-    tags: [
-      "HTML5",
-      "Bootstrap",
-      "JavaScript",
-      "React.js",
-      "Express.js",
-      "MongoDB",
-      "JWT",
-    ],
+    tags: ["React.js", "Express.js", "MongoDB", "JWT"],
     github: "https://github.com/Chiraggarg879",
-    webapp: "#",
   },
 ];
