@@ -37,7 +37,7 @@ import codecollabimg from "./assets/work_logo/CodeCollabImg.png";
 import grootImg from "./assets/work_logo/groot.png";
 
 export const RESUME_URL =
-  "https://drive.google.com/file/d/1NKMZr4x98nxpN2OSEqr2SR-h2ABeEGJA/view?usp=sharing";
+  "https://drive.google.com/file/d/1cIjOQ8uBQKNXf3GkDrQ54Oen_XY62IfF/view?usp=drive_link";
 
 export const CONTACT_EMAIL = "chiraggarg879@gmail.com";
 
