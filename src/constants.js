@@ -227,7 +227,7 @@ export const projects = [
       "**3 pluggable storage backends** behind a single Go interface, exposed via 4 REST endpoints.",
     ],
     tags: ["Go", "Redis", "Docker", "REST APIs", "Concurrency"],
-    github: "https://github.com/Chiraggarg879",
+    github: "https://github.com/Chiraggarg879/cinema-ticket-booking",
   },
   {
     id: 1,
@@ -242,7 +242,7 @@ export const projects = [
       "Containerized with **multi-stage, non-root images** and Docker Compose.",
     ],
     tags: ["Go", "Fiber", "MySQL", "Redis", "Docker"],
-    github: "https://github.com/Chiraggarg879",
+    github: "https://github.com/Chiraggarg879/url-shortener",
   },
   {
     id: 2,
@@ -251,7 +251,7 @@ export const projects = [
       "A Git-like version control system built from scratch with init, add, commit, log, diff and efficient file tracking.",
     image: grootImg,
     tags: ["JavaScript", "Node.js", "Data Structures"],
-    github: "https://github.com/Chiraggarg879",
+    github: "https://github.com/Chiraggarg879/GitClone-Groot",
   },
   {
     id: 3,
@@ -260,7 +260,7 @@ export const projects = [
       "Real-time collaborative code editor with multi-user live synchronization over WebSockets.",
     image: codecollabimg,
     tags: ["TypeScript", "React.js", "WebSockets"],
-    github: "https://github.com/Chiraggarg879",
+    github: "https://github.com/Chiraggarg879/Code-Collab-Application",
   },
   {
     id: 4,
@@ -269,6 +269,6 @@ export const projects = [
       "Full-stack expense tracker with JWT authentication, CRUD APIs and persistent storage.",
     image: expenseimg,
     tags: ["React.js", "Express.js", "MongoDB", "JWT"],
-    github: "https://github.com/Chiraggarg879",
+    github: "https://github.com/Chiraggarg879/Expense-Management",
   },
 ];
